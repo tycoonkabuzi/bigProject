@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif;
+}
+.header{
+    background-image: url("../images/header.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    height: 900px;
+    &__focus{
+        background-color:rgba(17, 80, 57, 0.415) ;
+        height: 900px;
+        width: 50%;
+        animation-name: slideRight;
+        animation-duration: 800ms;
+        animation-timing-function:cubic-bezier(0,.62,.83,.67);
+        h1{
+            padding-top: 300px;
+            color: rgb(237, 235, 235);
+            font-size: 90px;
+            margin-left: 100px;
+            margin-right: 50px;
+            font-weight: 900;
+            line-height: 70px;
+            animation-name: slideRightContent;
+            animation-duration: 500ms;
+            animation-timing-function:cubic-bezier(0,.62,.83,.67);
+            animation-delay: 30ms;
+           
+         
+        }     
+        p{
+            margin-top: 40px;
+            margin-left: 100px; 
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            margin-right:50px;
+            animation-name: slideRightContent;
+            animation-duration: 500ms;
+            animation-timing-function:cubic-bezier(0,.62,.83,.67);
+            animation-delay: 30ms;
+            
+           
+        } 
+        .bouton{
+            margin-top: 40px;
+            margin-left: 100px; 
+            font-size: 15px;
+            color:white;
+            background-color:rgb(23, 111, 79) ;
+            width: 200px;
+            height: 60px;
+            border-radius: 10px;
+            border-color:white;
+            border: none;
+            animation-name: slideRightContent;
+            animation-duration: 500ms;
+            animation-timing-function:cubic-bezier(0,.62,.83,.67);
+            animation-delay: 30ms;
+           
+            
+        }
+    }
+    
+  }
+.nav{
+    position:relative;
+    bottom:900px;
+    height: 80px;
+    background-color: rgb(23, 111, 79);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__logo{
+        margin-left: 100px;
+        img{
+            width: 25px;
+        }
+    }
+    &__menu{
+        margin-right: 150px;
+        &__item{
+            list-style-type: none;
+            display: inline;
+            padding-left: 50px;
+
+            a{
+                text-decoration: none;
+                color: white;
+            }
+          
+       }
+   }
+}
+@keyframes slideRight {
+    0%{
+        transform: translateX(-200px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+@keyframes slideRightContent {
+    0%{
+        transform: translateX(-200px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
