@@ -96,15 +96,20 @@
 }
 @keyframes slideRight {
     0%{
-        transform: translateX(-200px);
+        transform: translateX(-1000px) scaleZ(0);
+        
+    }
+    50%{
+        transform: translateX(-1000px) scaleZ(0);
+        
     }
     100%{
-        transform: translateX(0px);
+        transform: translateX(0px) scale(1.5);
     }
 }
 @keyframes slideRightContent {
     0%{
-        transform: translateX(-200px);
+        transform: translateX(-1000px);
     }
     100%{
         transform: translateX(0px);
